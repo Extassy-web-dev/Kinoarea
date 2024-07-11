@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/public/cinema 1.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./style.css" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+		rel="stylesheet">
+	<title>Kinoarea</title>
+	<link rel="stylesheet" href="/scss.sass">
+</head>
+
+<body>
+
+
+	<div class="container">
+		<header>
+			<div class="left">
+				<a href="/"><img src="/public/Логотип.svg" alt=""></a>
+
+
+				<img src="/public/media.png" alt="">
+
+			</div>
+			<div class="center">
+				<p>Афиша</p>
+				<p>Медиа</p>
+				<p>Фильмы</p>
+				<p>Актеры</p>
+				<p>Новости</p>
+				<p>Подборки</p>
+				<p>Категории</p>
+			</div>
+			<div class="right">
+				<button class="search"><img src="/public/Vector.svg" alt=""></button>
+				<button class="signin">Войти</button>
+			</div>
+
+		</header>
+	</div>
+
+
+	<div class="search_modal">
+		<div class="search_content">
+			<img src="/public/Логотип.svg" alt="logo">
+
+			<div class="input-box">
+				<input type="text" class="searchInp" placeholder="search">
+				<img class="closeImg"
+					src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Cross_icon_%28white%29.svg/2048px-Cross_icon_%28white%29.svg.png"
+					alt="close">
+			</div>
+
+			<div class="search_categories">
+				<div class="category active" id="movie">Movies</div>
+				<div class="category" id="person">Person</div>
+				<div class="category" id="tv">Tv</div>
+			</div>
+
+			<div class="search_results">
+
+			</div>
+		</div>
+	</div>
+
+
+	<section class="nowplaying">
+		<div class="backdrop">
+			<div class="container">
+
+				<div class="title__nowplaying">
+					<h1>Сейчас в кино</h1>
+					<img src="/public/Line 1.svg" alt="">
+					
+						<p>Все</p>
+						<p>Боевики</p>
+						<p>Приключения</p>
+						<p>Комедия</p>
+						<p>Фантастика</p>
+						<p>Триллеры</p>
+						<p>Драма</p>
+				
+				</div>
+
+				<div class="nowplaying__grid">
+
+				</div>
+
+		
+
+				<div class="btn">
+
+					<button class="allNews">Все новинки</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="trailers">
+		<div class="container">
+			<div class="title__nowplaying">
+				<h1>Новые трейлеры</h1>
+
+				<div class="y">
+					<p>Все трейлеры</p>
+					<img src="/public/Arrow 2.svg" alt="">
+				</div>
+			</div>
+			<iframe id="iframe" width="100%" height="765" src="https://www.youtube.com/embed/3mNMXafmfLY"
+				title="YouTube video player" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+			<div class="trailer__box">
+				<h2 class="nameTrailer">Вили вонка</h2>
+				<img src="/public/media.png" alt="">
+			</div>
+
+			<div class="trailer__list">
+
+			</div>
+		</div>
+	</section>
+
+	<section class="popular">
+		<div class="container">
+			<div class="title__nowplaying">
+				<h1>Популярные фильмы</h1>
+				<img src="/public/Line 1.svg" alt="">
+				<p class="popular__p">Все время</p>
+				<p>2020</p>
+				<p>2019</p>
+				<p>2018</p>
+				<p>2017</p>
+				<p>2016</p>
+				<p>2015</p>
+			</div>
+			<div class="popular__grid">
+
+			</div>
+
+			<div class="arrows">
+				<img class="prevment" src="/public/Arrow 3.svg" alt="">
+				<span><span class="countPopular">1</span>/5</span>
+				<img class="nexted" src="/public/Arrow 2.svg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="popular__persons">
+		<div class="container">
+			<div class="title__nowplaying">
+				<h1>Популярные персоны</h1>
+				<p>За год</p>
+				<p>За месяц</p>
+				<p>За неделю</p>
+			</div>
+
+			<div class="popularPersons__grid">
+
+
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="upcoming">
+		<div class="container">
+			<div class="title__nowplaying">
+				<h1>Ожидаемые новинки</h1>
+
+				<div class="arrows">
+					<img class="prev" src="/public/Arrow 3.svg" alt="">
+					<span><span class="count">1</span>/5</span>
+					<img class="next" src="/public/Arrow 2.svg" alt="">
+				</div>
+
+
+			</div>
+			<div class="upcoming__grid">
+
+			</div>
+		</div>
+	</section>
+
+	<section class="emailRassylka">
+		<div class="containerFotter">
+			<div class="background">
+				<div class="logo">
+					<img src="/public/logo-white.svg" alt="logo">
+				</div>
+
+				<div class="content">
+					<h1>Подпишитесь на E-mail рассылку</h1>
+					<p>Если хотиет быть в курсе последних новостей и новинок кино - <br>
+						заполните форму ниже и оформите бесплатную E-mail рассылку! </p>
+					<form name="email" class="forma">
+						<input style="outline: none;" placeholder="Введите свой E-mail адрес" type="text" required>
+						<button type="submit">Подписаться</button>
+					</form>
+				</div>
+				<div class="foot">
+					<input checked type="checkbox">
+					<p>Соглашаюсь на условия <a href="#">политики конфиденциальности</a> </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<img src="/public/social_media.svg" alt="">
+		<nav>
+			<a href="#">Афиша</a>
+			<a href="#">Новости</a>
+			<a href="#">Персоны</a>
+			<a href="#">Рейтинги</a>
+			<a href="#">Рецензии</a>
+			<a href="#">Каталог фильмов</a>
+		</nav>
+		<p>2020 © Kinoarea. Все права защищены</p>
+		<a class="confidance" href="#">Политика конфиденциальности</a>
+	</footer>
+
+
+	<script type="module" src="/main.js"></script>
+</body>
+
+</html>

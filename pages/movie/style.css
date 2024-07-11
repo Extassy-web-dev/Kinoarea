@@ -1,0 +1,460 @@
+@font-face {
+	font-family: 'Qanelas';
+	src: local("Qanelas"),
+		url("/qanelas/QanelasBlack.otf") format("truetype")
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Qanelas';
+}
+
+html {
+	font-size: 62.5%;
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 1.6rem;
+	line-height: 1.5;
+	background-color: rgb(30, 37, 56);
+}
+
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+
+	.left {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 10px;
+
+		img {
+			cursor: pointer;
+		}
+	}
+
+	.center {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+
+		p {
+
+			color: white;
+		}
+	}
+
+	.right {
+		display: flex;
+		justify-content: right;
+		align-items: center;
+		gap: 20px;
+
+		.search {
+			width: 55px;
+			height: 52px;
+			background-color: #fff;
+			border-style: none;
+			border-radius: 5px;
+		}
+
+		.signin {
+			width: 138px;
+			height: 53px;
+			border-radius: 10px;
+			background-color: rgb(54, 87, 203);
+			color: white;
+			border-style: none;
+		}
+	}
+}
+
+
+.container {
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 50px;
+	background-color: rgb(21, 26, 38);
+	padding-top: 50px;
+	margin-top: 50px;
+	nav {
+		display: flex;
+		gap: 50px;
+
+		a {
+			color: white;
+			text-decoration: none;
+		}
+
+	}
+
+	p {
+		color: rgb(169, 173, 184);
+	}
+
+	.confidance {
+		color: rgb(169, 173, 184);
+	}
+}
+
+.content {
+    padding: 20px 0 20px;
+    display: flex;
+    gap: 70px;
+	
+	#posterMovie {
+		width: 395px;
+		height: 539px;
+		border-radius: 10px;
+	}
+
+    .box {
+
+        .top {
+            color: rgb(124, 124, 124);
+
+            span {
+                color: white;
+            }
+        }
+
+		a {
+			color: rgb(124, 124, 124);
+			text-decoration: none;
+		}
+
+        .nameh1 {
+            font-size: 65px;
+        }
+
+        .nameEn {
+            font-size: 25px;
+        }
+
+        .overwiew {
+            font-size: 20px;
+        }
+
+        padding-top: 40px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .rates {
+            display: flex;
+            gap: 20px;
+        }
+
+        .foot {
+
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            img {
+                width: 200px;
+            }
+
+            button {
+                width: 260px;
+                height: 71px;
+                border-radius: 10px;
+                background: none;
+                border: 1px solid white;
+                color: white;
+            }
+            
+        }
+    }
+}
+
+.rating {
+	position: relative;
+	top: 61px;
+	left: 32.5px;
+	font-size: 15px;
+}
+
+.title__nowplaying {
+	padding-top: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	align-items: center;
+	padding-bottom: 20px;
+	color: white;
+
+	div {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+	}
+
+	h1 {
+		font-size: 65px;
+	}
+}
+
+.actors__grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 20px;
+}
+
+.elemActors {
+	display: flex;
+	flex-direction: column;
+	
+	img {
+		margin-top: 50px;
+		width: 100%;
+		border-radius: 5px;
+	}
+	
+	.nameA {
+		padding-top: 10px;
+		font-size: 18px;
+		color: white;
+	}
+
+	.nameO {
+		padding: 10px 0 10px;
+		font-size: 18px;
+		color: rgba(255, 255, 255, 0.7);
+	}
+
+	.character {
+		font-size: 18px;
+		color: rgba(242, 246, 15, 1);
+		
+	}
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 0 40px;
+	h1 {
+		font-size: 65px;
+		color: white;
+	}
+}
+
+.category {
+	color: #F2F60F;
+	padding-bottom: 30px;
+
+}
+
+.name {
+	color: white;
+	padding: 10px 0 10px;
+}
+
+.boxPreq {
+	display: grid;
+	padding-top: 50px;
+	gap: 20px;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.arrows {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	padding: 40px 0 40px;
+	color: white;
+}
+
+.similar__box {
+	display: grid;
+	padding-top: 50px;
+	gap: 20px;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+
+.search_modal {
+	width: 100%;
+	height: 100vh;
+	visibility: hidden;
+	opacity: 0;
+	transition: .3s all ease;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	background-color: rgba(0, 0, 0, 0.87);
+}
+
+.search_content {
+	max-width: 1400px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.input-box {
+		width: 100%;
+		margin-top: 20px;
+		display: flex;
+		align-items: center;
+		gap: 32px;
+
+		img {
+			width: 20px;
+		}
+
+		input {
+			width: 100%;
+			height: 60px;
+			font-size: 24px;
+			border-radius: 10px;
+			padding: 15px;
+		}
+	}
+}
+
+.search_categories {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	.category {
+		width: 100%;
+		padding: 16px;
+		text-align: center;
+		font-size: 20px;
+		font-weight: 500;
+		color: white;
+	}
+
+	
+	.category.active {
+		
+		border-bottom: 1px solid yellow;
+	}
+}
+
+
+
+.search_results {
+	width: 100%;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+	
+	
+	height: 800px;
+	color: white;
+
+}
+
+.search_results::-webkit-scrollbar {
+	width: 15px;
+}
+.search_result-item {
+	width: 100%;
+	border-radius: 8px;
+	padding: 10px;
+	background-color: #1e2538;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	position: relative;
+
+}
+
+.search_results-img {
+	max-height: 400px;
+	border-radius: 8px;
+}
+
+
+
+.search_results-rate {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+}
+
+::-webkit-scrollbar {
+	width: 7px;
+	height: 7px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #222222;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #8a8a8a;
+	border-radius: 10px;
+}
+
+.data {
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+	display: flex;
+	gap: 200px;
+	
+	.active {
+		color: white;
+		text-decoration: underline;
+	}
+
+	.information {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		p {
+			font-size: 20px;
+			color: rgb(255, 255, 255);
+		}
+	}
+	.biography {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		
+		
+		p {
+			font-size: 20px;
+			color: rgba(242, 246, 15, 1);
+			text-decoration: underline;
+		}
+	}
+}
+
+.notname {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	p {
+		color: white;
+		font-size: 25px;
+	}
+}

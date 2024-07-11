@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/public/cinema 1.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Movie
+    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header></header>
+    </div>
+
+    <div class="search_modal">
+		<div class="search_content">
+			<img src="/public/Логотип.svg" alt="logo">
+
+			<div class="input-box">
+				<input type="text" class="searchInp" placeholder="search">
+				<img class="closeImg"
+					src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Cross_icon_%28white%29.svg/2048px-Cross_icon_%28white%29.svg.png"
+					alt="close">
+			</div>
+
+			<div class="search_categories">
+				<div class="category active" id="movie">Movies</div>
+				<div class="category" id="person">Person</div>
+				<div class="category" id="tv">Tv</div>
+			</div>
+
+			<div class="search_results">
+
+			</div>
+		</div>
+	</div>
+
+    <section class="cartfilm">
+        <div class="container">
+            <div class="content">
+                <img id="posterMovie" src="/public/image 1.png" alt="">
+                <div class="box">
+                    <p class="top">Главнaя > Фильмы > <span class="name">Побег из Претории</span></p>
+
+                    <h1 class="nameh1">Побег из Претории</h1>
+                    <h3 class="nameEn">Escape from Pretoria</h3>
+                    
+                    <div class="rates">
+                        <div class="kinoarea">
+                            <h2 class="rating"></h2>
+                            <canvas id="ratingChart" width="100px" height="100px"></canvas>
+                        </div>
+                        
+                    </div>
+                    
+                    <h3 class="overwiew">Двое борцов за свободу отбывают срок в одной из самых строгих тюрем мира — в «Претории». Вместе с другими узниками они планируют дерзкий и опасный побег. Но придумать план — это только первый шаг. Шаг второй — реализация плана.</h3>
+
+                    <div class="foot">
+                        <a href="#whatch"><button>Смотерть трейлер</button></a>
+                        <img src="/public/media.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="data">
+
+                <div class="information">
+                   
+                    <p>Дата выхода:</p>
+                    
+                    <p>Страна:</p>
+                    <p>Исходный язык:</p>
+                    <p>Разговорные языки:</p>
+                    <p>Слоган</p>
+                </div>
+                <div class="biography">
+                    <p class="relize_date">Актёр</p>
+                    <p class="country">fg</p>
+                    <p class="language">fg</p>
+                    <p class="speak_language">fg</p>
+                    <p class="slogan"></p>
+                </div>
+                <div class="information">
+                    <p>Жанр:</p>
+                    <p>Бюджет:</p>
+                    <p>Время:</p>
+                    <p>Доход</p>
+                    <p>Компания</p>
+                </div>
+                <div class="biography">
+                    
+                    <p class="genre">Актёр</p>
+        
+                    <p class="budget">fg</p>
+                    <p class="time">fg</p>
+                    <p class="dohod">fg</p>
+                    <p class="company"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="actors">
+        <div class="container">
+            
+				<div class="title__nowplaying">
+					<h1>В главных ролях:</h1>
+				
+                    <div class="all-act">
+                        <p>Все актеры </p>
+                    <img src="/public/Arrow 2.svg" alt="">
+                    </div>
+					
+				</div>
+            <div class="actors__grid">
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="whatch" class="trailers">
+        <div class="container">
+            <div class="title__nowplaying">
+                <h1>Трейлеры фильма</h1>
+            
+                <div>
+                     <p>Все трейлеры </p>
+                <img src="/public/Arrow 2.svg" alt="">
+                </div>
+               
+                
+            </div>
+            <iframe width="100%" height="760px" src="" frameborder="0"></iframe>
+            <div class="notname">
+                <p class="notName"></p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="siquels_priquels">
+        <div class="container">
+
+            <div class="title">
+                <h1>Сиквелы и приквелы</h1>
+            </div>
+            <div class="boxPreq">
+    
+            </div>
+
+            <div class="arrows">
+                <img class="prev" src="/public/Arrow 3.svg" alt="">
+                <p><span class="count">1</span>/5</p>
+                <img class="next" src="/public/Arrow 2.svg" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <section class="similar">
+        <div class="container">
+            <div class="title">
+                <h1>Похожие фильмы</h1>
+            </div>
+            
+            <div class="similar__box">
+                
+            </div>
+            <div class="arrows">
+                <img class="prevsimilar" src="/public/Arrow 3.svg" alt="">
+                <p><span class="countsimilar">1</span>/5</p>
+                <img class="nextsimilar" src="/public/Arrow 2.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer></footer>
+
+  
+    <script type="module" src="./script.js"></script>
+    <script src="/modules/component.js"></script>
+</body>
+</html>
